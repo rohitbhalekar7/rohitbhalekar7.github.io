@@ -629,9 +629,11 @@ li .description {
 	}
 
 	.container {
-		margin: 0px;
+		margin: 2.5rem auto;
 		padding: 0 1rem;
 	}
+
+
 
 	footer {
 		margin-top: 2050px;
