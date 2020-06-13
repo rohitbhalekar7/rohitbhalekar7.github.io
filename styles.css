@@ -617,7 +617,8 @@ li .description {
 		padding: 10px
 	}
 
-	.list-card {
+	.list-card,
+	.list-card>div {
 		width: 100%;
 		/*! padding: 0rem; */
 	}
