@@ -255,7 +255,7 @@ h1.name {
 	font-size: 1rem;
 }
 
-.footer>span {
+.text-differ {
 	color: #4a90e6;
 	font-weight: bold;
 }
@@ -413,7 +413,11 @@ h1.name {
 }
 
 /* Achievements ends */
-
+.footer-icon>a {
+	float: right;
+	color: black;
+	margin: 2px;
+}
 
 
 /* Timeline styles*/
