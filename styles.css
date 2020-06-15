@@ -184,7 +184,8 @@ h1.name>strong {
 	height: 15rem;
 }
 
-.skills-sets {
+.skills-sets,
+.learning-skill-sets {
 	display: flex;
 
 	justify-self: start;
@@ -211,6 +212,30 @@ h1.name>strong {
 
 	word-wrap: break-word;
 	overflow-wrap: break-word;
+}
+
+
+.learning-skill-sets>div {
+	display: block;
+	background-color: #df6787;
+	color: white;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 0.5rem;
+	font-size: 1rem;
+
+	font-weight: bold;
+
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.skills-sub-tittle {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
+	/* color: #81899C; */
+	/* font-weight: bold; */
 }
 
 .skills-tittle {
