@@ -9,118 +9,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 
-
-/* Reset Styles */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-a {
-	text-decoration: none;
-	text-transform: none;
-	color: #4A90E2;
-}
+/* Reset ends */
 
 body {
 	line-height: 1;
@@ -132,54 +21,14 @@ body {
 	color: #04143A;
 }
 
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-p {
-	color: #15171a;
-	font-size: 17;
-	line-height: 31px;
-}
-
-strong {
-	font-weight: 600;
-}
-
-div,
-footer {
-	box-sizing: border-box;
-}
-
-/* Reset ends */
-
 
 /*Hero section*/
-
+/*
 .container {
 	max-width: 1100px;
 	height: auto;
 	margin: 3rem auto;
-}
+} */
 
 .hero {
 	/*! margin: 0rem auto; */
@@ -187,9 +36,18 @@ footer {
 }
 
 h1.name {
-	font-size: 4.4rem;
+	font-size: 4.5rem;
 	font-weight: 300;
 	display: inline-block;
+}
+
+.hero-desc {
+	font-weight: lighter;
+	line-height: 3rem;
+}
+
+h1.name>strong {
+	font-weight: 600;
 }
 
 .job-title {
@@ -204,12 +62,19 @@ h1.name {
 	padding: 1rem;
 }
 
+.m-badge {
+	background-color: #D9E7F8 !important;
+	color: #4A90E2 !important;
+	padding: 1rem !important;
+
+}
+
 .email {
 	display: block;
 	font-size: 1.5rem;
 	font-weight: 300;
 	color: #81899C;
-	margin-top: 1rem;
+	/*! margin-top: 1rem; */
 }
 
 .lead {
@@ -237,18 +102,17 @@ h1.name {
 }
 
 .list-card {
-	margin: 2rem 0;
+	margin: 1rem 0;
 
-	width: 50%;
-	float: left;
-	display: block;
+	/*! width: 50%; */
+	/*! float: left; */
+	/*! display: block; */
 }
 
 .list-card .exp,
 .list-card div {
-	display: inline-block;
-
-	vertical-align: top;
+	/* display: inline-block; */
+	/* vertical-align: top; */
 }
 
 .footer {
@@ -264,12 +128,12 @@ h1.name {
 	margin-right: 1;
 	color: #4A90E2;
 	font-weight: 600;
-	width: 7rem;
+	/* width: 7rem; */
 	font-size: 1.2rem;
 }
 
 .list-card div {
-	width: 70%;
+	/* width: 70%; */
 }
 
 .list-card h3 {
@@ -293,23 +157,23 @@ h1.name {
 
 
 
-.card {
-	width: 47.9%;
-	height: 13rem;
-	background-color: #EEF0F7;
+.m-card {
+
+	background-color: #EEF0F7 !important;
 	display: inline-block;
-	margin: 0.5rem 0.5rem;
 	vertical-align: top;
-	border-radius: 0.5rem;
+	border-width: 0 !important;
+	border-radius: 0.5rem !important;
 	text-align: center;
-	padding-top: 3.5rem;
+	color: #81899C;
+	margin-bottom: 1rem;
 }
 
-.card-active,
-.card:hover {
+.m-card-active,
+.m-card:hover {
 	transform: scale(1.02);
 	transition: 0.5s;
-	background-color: #fff;
+	background-color: #fff !important;
 	box-shadow: 0px 5px 50px -8px #ddd;
 	cursor: pointer;
 }
@@ -334,6 +198,23 @@ h1.name {
 	margin-top: 10rem;
 }
 
+.skills-sets>div {
+
+	display: block;
+	background-color: #4a90e6;
+	color: white;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 0.5rem;
+	font-size: 1rem;
+
+	font-weight: bold;
+
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+
 .learning-skill-sets>div {
 	display: block;
 	background-color: #df6787;
@@ -355,22 +236,6 @@ h1.name {
 	margin-top: 0.5rem;
 	/* color: #81899C; */
 	/* font-weight: bold; */
-}
-
-.skills-sets>div {
-
-	display: block;
-	background-color: #4a90e6;
-	color: white;
-	padding: 1rem;
-	border-radius: 0.5rem;
-	margin: 0.5rem;
-	font-size: 1rem;
-
-	font-weight: bold;
-
-	word-wrap: break-word;
-	overflow-wrap: break-word;
 }
 
 .skills-tittle {
@@ -404,6 +269,12 @@ h1.name {
 	color: #5B6A9A;
 	margin-bottom: 5px;
 	font-weight: bold;
+}
+
+.m-color>div>span {
+	font-weight: lighter;
+	color: #5B6A9A;
+
 }
 
 .skill-meta {
@@ -567,138 +438,27 @@ li .description {
 	margin-top: initial;
 }
 
-/*timeline ends*/
-
-
-
-/* Media queries*/
-
-@media(max-width: 1024px) {
-	.container {
-		padding: 1rem;
-		margin: 0px auto;
-	}
-
-	.cards {
-		margin-top: 250px;
-	}
+.mheight {
+	height: 20vh;
 }
-
-
-@media(max-width: 768px) {
-	.container {
-		padding: 1rem;
-		margin: 0px auto;
-	}
-
-	.cards {
-		margin-top: 320px;
-	}
-
-	.card {
-		padding: 1rem;
-		text-align: left;
-	}
-
-	.card h2 {
-		font-size: 4rem;
-	}
-
-	.card,
-	.sections {
-		width: 100%;
-		height: auto;
-		margin: 1rem auto;
-
-
-	}
-
-
-
-	.timeline {
-		border: none;
-		background-color: rgba(0, 0, 0, 0);
-	}
-
-	.timeline li {
-		margin-top: 70px;
-		height: 150px;
-	}
-}
-
 
 @media screen and (max-width: 424px) {
-	h1.name {
-		font-size: 4rem;
-	}
-
-	#m-experience,
-	#m-education {
-		display: block;
-	}
-
-
-	#timeline,
-	#timeline2 {
-		display: none;
-	}
-
-
-	.card,
-	.sections {
-		width: 100%;
-		height: auto;
-		margin: 0 0 1rem 0;
-		/* margin: 1rem auto; */
-		/* float: left; */
-	}
-
-
-	.job-title {
-		position: absolute;
-		font-size: 1rem;
-		top: 0px;
-		right: 20px;
-		padding: 10px
-	}
-
 	.skill-meta {
-		margin-left: 0;
+		margin-top: 0rem;
+		margin-left: 0rem;
+		text-align: center;
+
 	}
 
-	.list-card {
-		width: 100%;
-		/*! padding: 0rem; */
-		margin: 1rem auto;
+	.skill-meta h3 {
+
+		text-align: center;
+
 	}
 
-	.list-card>div {
-		width: 100%;
-	}
-
-	.lead {
-		margin-top: 15px;
-		font-size: 1.2rem;
-		line-height: 28px;
-	}
-
-	.container {
-		margin: 2.5rem auto;
-		padding: 0 1rem;
-	}
-
-	.m-container {
-		margin-top: 24rem;
-	}
-
-	.mr-top {
-		margin-top: 1rem;
-	}
-
-	footer {
-		margin-top: 2050px;
+	.cmb-10>div {
+		margin-bottom: 1rem;
 	}
 }
-
 
 /* End of all :P*/
